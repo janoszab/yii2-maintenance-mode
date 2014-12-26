@@ -1,0 +1,21 @@
+{
+    "name": "sacara/yii2-maintenance",
+    "description": "Maintenance mode for Yii2 framework",
+    "type": "yii2-extension",
+    "require": {
+        "yiisoft/yii2": "2.*"
+    },
+    "license": "BSD-3-Clause",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nico Schefuﬂ",
+            "email": "redirectn1k@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "sacara\\maintenance\\": ""
+        }
+    }
+}
