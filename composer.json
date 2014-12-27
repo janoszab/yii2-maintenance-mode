@@ -1,12 +1,13 @@
 {
-    "name": "sacara/yii2-maintenance",
-    "description": "Maintenance mode for Yii2 framework",
+    "name": "sacara/yii2-maintenance-mode",
     "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "description": "Maintenance mode for Yii2 framework",
+    "keywords": ["yii2", "maintenance", "mode"],
+    "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": "2.*"
     },
-    "license": "BSD-3-Clause",
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Nico Schefuﬂ",
