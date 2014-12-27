@@ -20,8 +20,12 @@ $this->title = \Yii::$app->name . ' - Maintenance';
         <h3 class="text-muted"><?= \yii\helpers\Html::encode(\Yii::$app->name) ?></h3>
     </div>
     <div class="jumbotron">
-        <h1>Maintenance mode</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        <p class="lead">
+            <h1><?= \Yii::t('maintenance', 'Maintenance mode'); ?></h1>
+        </p>
+        <p class="lead"><?= \Yii::t('maintenance', 'Sorry, this page is currently not available.'); ?></p>
+        <p class="lead"><?= \Yii::t('maintenance', 'This page is currently in a maintenance mode. Usually this takes 5-15 minutes.'); ?></p>
+        <p class="lead"><?= \Yii::t('maintenance', 'Visit us again soon.'); ?></p>
     </div>
     <footer class="footer">
         <p>&copy; <?= \yii\helpers\Html::encode(\Yii::$app->name) ?> <?= date('Y') ?></p>

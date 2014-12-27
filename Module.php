@@ -21,6 +21,10 @@ class Module extends \yii\base\Module
     public function init()
     {
         parent::init();
+        \Yii::$app->i18n->translations['maintenance*'] = [
+            'class' => 'yii\i18n\PhpMessageSource',
+            'basePath' => __DIR__ . '/messages',
+        ];
         if (file_exists(\Yii::getAlias('@app') . '/web/maintenance')) {
             \Yii::$app->catchAll = ['maintenance'];
         }
