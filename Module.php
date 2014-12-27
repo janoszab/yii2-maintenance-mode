@@ -14,6 +14,11 @@ class Module extends \yii\base\Module
     public $defaultRoute = 'maintenance';
 
     /**
+     * @var string Filename when maintenance mode is on.
+     */
+    public $maintenanceFileOn = 'maintenance.on';
+
+    /**
      * init()
      *
      * @return void
@@ -21,12 +26,23 @@ class Module extends \yii\base\Module
     public function init()
     {
         parent::init();
-        \Yii::$app->i18n->translations['maintenance*'] = [
-            'class' => 'yii\i18n\PhpMessageSource',
-            'basePath' => __DIR__ . '/messages',
-        ];
-        if (file_exists(\Yii::getAlias('@app') . '/web/maintenance')) {
+        $this->registerTranslations();
+        $maintenanceFilePath = \Yii::getAlias('@app') . '/web/';
+        if (file_exists($maintenanceFilePath . $this->maintenanceFileOn)) {
             \Yii::$app->catchAll = ['maintenance'];
         }
+    }
+
+    /**
+     * registerTranslations()
+     *
+     * @return void
+     */
+    public function registerTranslations()
+    {
+        \Yii::$app->i18n->translations['maintenance*'] = [
+            'class' => 'yii\i18n\PhpMessageSource',
+            'basePath' => __dir__ . '/messages'
+        ];
     }
 }

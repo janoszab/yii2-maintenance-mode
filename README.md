@@ -20,4 +20,4 @@ Add to your config file:
    ],
 ```
 
-Create a file in the `@web` directory named `maintenance` to activate the maintenance mode.
+Create a file in the `@web` directory named `maintenance.on` to activate the maintenance mode.
