@@ -1,20 +1,13 @@
-yii2-maintenance
+Yii2-maintenance
 ================
 
 Installation
 ------------
 
-```
-php composer.phar require --prefer-dist sacara/yii2-maintenance "*"
-```
-
-or add
-
+Add to the require section of your `composer.json` file:
 ```
 "sacara/yii2-maintenance": "*"
 ```
-
-to the require section of your `composer.json` file.
 
 Add to your config file:
 ```php
@@ -25,7 +18,6 @@ Add to your config file:
         'class' => 'sacara\maintenance\Module',
      ],
    ],
-   ...
 ```
 
 Create a file in the `@web` directory named `maintenance` to activate the maintenance mode.
