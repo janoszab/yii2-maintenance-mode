@@ -16,6 +16,8 @@ Add to your config file:
    'modules' => [
      'maintenance' => [
         'class' => 'sacara\maintenance\Module',
+        // optional
+        'maintenanceFileOn' => 'maintenance.on', // default is `maintenance.on`
      ],
    ],
 ```
