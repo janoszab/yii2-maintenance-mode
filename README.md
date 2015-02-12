@@ -6,7 +6,7 @@ Installation
 
 Add to the require section of your `composer.json` file:
 ```
-"sacara/yii2-maintenance": "*"
+"sacara/yii2-maintenance-mode": "*"
 ```
 
 Add to your config file:
