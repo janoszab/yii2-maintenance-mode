@@ -2,9 +2,9 @@
 /**
  * Yii2-maintenance module.
  *
- * @author Nico Schefuß <redirectn1k@gmail.com>
+ * @author Nico Schefuï¿½ <redirectn1k@gmail.com>
  */
-namespace sacara\maintenance;
+namespace janoszab\maintenance;
 
 class Module extends \yii\base\Module
 {

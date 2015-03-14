@@ -4,7 +4,7 @@
  *
  * (c) Sacara project <https://github.com/sacara/>
  */
-namespace sacara\maintenance\controllers;
+namespace janoszab\maintenance\controllers;
 
 class MaintenanceController extends \yii\web\Controller
 {
