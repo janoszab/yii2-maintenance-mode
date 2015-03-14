@@ -1,9 +1,5 @@
 <?php
-/*
- * This file is part of the Sacara project.
- *
- * (c) Sacara project <https://github.com/sacara/>
- */
+
 $this->title = \Yii::$app->name . ' - Maintenance';
 ?>
 <!DOCTYPE html>
