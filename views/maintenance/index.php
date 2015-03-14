@@ -1,6 +1,6 @@
 <?php
 
-$this->title = \Yii::$app->name . ' - Maintenance';
+$this->title = \Yii::$app->name . ' - ' . Yii::t('maintenance', 'Maintenance mode');
 ?>
 <!DOCTYPE html>
 <html lang="<?= \Yii::$app->language ?>">
