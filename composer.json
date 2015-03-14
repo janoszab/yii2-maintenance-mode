@@ -1,5 +1,5 @@
 {
-    "name": "sacara/yii2-maintenance-mode",
+    "name": "janoszab/yii2-maintenance-mode",
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "description": "Maintenance mode for Yii2 framework",
@@ -10,13 +10,13 @@
     },
     "authors": [
         {
-            "name": "Nico Schefuß",
-            "email": "redirectn1k@gmail.com"
+            "name": "Janos Zab",
+            "email": "johnny@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "sacara\\maintenance\\": ""
+            "janoszab\\maintenance\\": ""
         }
     }
 }
